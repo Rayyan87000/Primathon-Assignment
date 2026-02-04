@@ -1,3 +1,6 @@
+
+// ProductCard is a reusable React component
+// It receives product-related data using props (destructuring directly in parameters)
 const ProductCard = ({ img, name, price, originalPrice, discount, badge, reviews, volume, rating, type, description }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 group border border-gray-100">
@@ -27,13 +30,16 @@ const ProductCard = ({ img, name, price, originalPrice, discount, badge, reviews
 
       {/* Product Info */}
       <div className="p-4">
+        {/* Product type/category shown only if available */}
         {type && (
           <p className="text-xs font-semibold text-gray-600 mb-1 uppercase">{type}</p>
         )}
+             {/* Product name */}
         <h3 className="text-sm font-medium mb-1 text-gray-900 line-clamp-2 min-h-[2.5rem]">
           {name}
         </h3>
         
+        {/* Product description shown only if available */}
         {description && (
           <p className="text-xs text-gray-600 mb-2 line-clamp-2">{description}</p>
         )}
@@ -69,3 +75,21 @@ const ProductCard = ({ img, name, price, originalPrice, discount, badge, reviews
 };
 
 export default ProductCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

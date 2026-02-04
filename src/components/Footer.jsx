@@ -1,10 +1,16 @@
 import { FiFacebook, FiTwitter, FiInstagram, FiYoutube, FiMail } from "react-icons/fi";
+
+// Importing shield/check icon from Heroicons
+// This icon is used to represent security / trust
 import { HiShieldCheck } from "react-icons/hi";
 import logo from "../assets/logos/BBlunt-Logo.png";
 
 const Footer = () => {
   return (
+    // Main footer container with dark background and light text
     <footer className="bg-black text-gray-300 mt-20">
+      
+      {/* Centered content wrapper with max width and responsive padding */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-14">
 
         {/* Top Section */}
@@ -113,3 +119,21 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

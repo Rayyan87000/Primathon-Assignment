@@ -1,7 +1,12 @@
 import { useRef } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
+// Importing the reusable ProductCard component
+// This component is responsible for rendering a single product UI
 import ProductCard from "./ProductCard";
 
+// ProductSection is a reusable component
+// It receives data via props: title, products array, and total product count
 const ProductSection = ({ title, products, viewAllCount }) => {
   const scrollRef = useRef(null);
 
@@ -76,3 +81,25 @@ const ProductSection = ({ title, products, viewAllCount }) => {
 };
 
 export default ProductSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

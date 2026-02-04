@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { FiSearch, FiShoppingBag, FiMenu, FiX, FiChevronDown, FiUser } from "react-icons/fi";
+import { useState } from "react"; //useState is a React tool that lets a component remember and update data. and here it means “I want to use React’s state feature inside this component.”
+import { FiSearch, FiShoppingBag, FiMenu, FiX, FiChevronDown, FiUser } from "react-icons/fi";// 🔍,🛍️,☰ Hamburger menu icon,❌ Close icon, ⬇ Dropdown arrow, 👤 User / profile icon respectively. 
  
 import logo from "../assets/logos/a.png";
 
 
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); //false → menu is closed by default , setOpen → function to toggle state ye menu ko open ya close karne ka function hai
 
   return (
-    <nav className="w-full border-b border-gray-200 bg-white sticky top-0 z-50">
+    <nav className="w-full border-b border-gray-200 bg-white sticky top-0 z-50">{/*sticky top-0 → navbar stays at top on scroll , sticky top-0 → navbar stays at top on scroll*/}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8 py-0.5">
 
         {/* Logo with Tagline */}
-        {/* <div className="flex-shrink-0">
+        {/* <div className="flex-shrink-0"> 
           <img 
             src={logo} 
             alt="BBLUNT Logo" 
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div> */}
 
         {/* Logo with Tagline */}
-<div className="flex-shrink-0">
+<div className="flex-shrink-0">  {/*flex-shrink-0 → prevents logo from shrinking*/}
   <img 
     src={logo}
     alt="BBLUNT Logo"
@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
         {/* Desktop Menu */}
-        <ul className="hidden mr-auto lg:flex items-center gap-6 py-3 md:gap-8 text-sm font-medium text-black ml-10 text:bold">
+        <ul className="hidden mr-auto lg:flex items-center gap-6 py-3 md:gap-8 text-sm font-medium text-black ml-10 text:bold">{/*hidden → hidden on small screens lg:flex → visible only on large screens mr-auto → pushes menu left*/}
           <li className="cursor-pointer hover:text-gray-600 transition-colors flex items-center gap-1">
             Product
             <FiChevronDown className="w-4 h-4" />
@@ -65,19 +65,19 @@ const Navbar = () => {
           </div>
           <FiUser className="w-5 h-5 md:w-6 md:h-6 cursor-pointer text-gray-800 hover:text-gray-600 transition-colors hidden md:block" />
 
-          {/* Hamburger (Mobile only) */}
+          {/* Hamburger only for (Mobile screen) */} 
           <button
             className="lg:hidden text-gray-800 hover:text-gray-600 transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
-            {open ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
+            {open ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />} {/*Meaning: If open === true → show close icon ❌ Else → show hamburger ☰*/}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {open && (
+      {open && ( // Mobile menu renders only when open is true
         <div className="lg:hidden border-t border-gray-200 bg-white">
           <ul className="flex flex-col px-4 py-4 gap-4 text-sm font-medium text-gray-800">
             <li className="cursor-pointer hover:text-gray-600 transition-colors py-2 flex items-center justify-between">
@@ -103,3 +103,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// Makes component available to App.jsx
+
+// Used as <Navbar />

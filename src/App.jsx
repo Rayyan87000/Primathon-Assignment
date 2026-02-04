@@ -43,7 +43,7 @@ function App() {
       <Categories />
       <Products />
       <ProductSection title="For Hair Fall Control" products={hairFallProducts} viewAllCount={14} />
-      <ProductSection title="For Damage Repair" products={damageRepairProducts} viewAllCount={30} />
+      <ProductSection title="For Damage Repair" products={damageRepairProducts} viewAllCount={30} /> //viewAllCount is a number that tells the component how many total products exist.
       <Testimonials />
       <Footer />
     </>
@@ -51,6 +51,22 @@ function App() {
 }
 
 export default App;
+
+
+//Props = inputs given to a component  , Think of props like arguments to a function.
+// see the example
+// function ProductSection(title, products, count) {
+//   ...
+// }
+// ProductSection("For Hair Fall Control", hairFallProducts, 14);
+
+
+// <ProductSection 
+//   title="For Hair Fall Control"
+//   products={hairFallProducts}
+//   viewAllCount={14}
+// />
+
 
 
 

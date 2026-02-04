@@ -17,10 +17,12 @@ const concerns = [
 const Concerns = () => {
   const scrollRef = useRef(null);
 
+    // Safety check to ensure the DOM element exists
   const scroll = (direction) => {
     if (scrollRef.current) {
       const scrollAmount = 300;
       scrollRef.current.scrollBy({
+          // Scroll left or right based on direction
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth'
       });
@@ -44,12 +46,15 @@ const Concerns = () => {
 
         {/* Scrollable Container */}
         <div
+          // Attaching ref to DOM element for scroll control
           ref={scrollRef}
           className="flex gap-4 md:gap-4  overflow-x-auto scrollbar-hide scroll-smooth"
+          // Inline styles to hide scrollbar in all browsers
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
+        >    {/* Looping through concerns array to render each concern card */}
           {concerns.map((item, index) => (
             <div
+             // Key required by React for list rendering
               key={index}className="flex-shrink-0 w-[70%] sm:w-[45%] md:w-[30%] lg:w-[20%] cursor-pointer group"
 
             >
@@ -84,3 +89,16 @@ const Concerns = () => {
 };
 
 export default Concerns;
+
+
+
+
+
+
+
+
+
+
+
+
+

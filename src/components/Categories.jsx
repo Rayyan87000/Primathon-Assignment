@@ -1,5 +1,6 @@
-import { useRef } from "react";
+import { useRef } from "react";//What this means: useRef is a React Hook It lets us directly reference a DOM element 👉 Here, we need it to scroll a container horizontally.
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+// Vite converts these into optimized URLs at build time this all p1,p2 .... all this
 import p1 from "../assets/products/2_19.jpg";
 import p2 from "../assets/products/3_6_1_2.jpg";
 import p3 from "../assets/products/3_6_23.jpg";
@@ -14,19 +15,20 @@ const categories = [
   { title: "Hair serum", img: p5 },
 ];
 
-const Categories = () => {
+const Categories = () => {  {/* // Static array containing category data // Each object represents one category card with a title and image*/}
   const scrollRef = useRef(null);
 
-  const scroll = (direction) => {
+  const scroll = (direction) => { {/*/ Function to handle horizontal scrolling*/}
     if (scrollRef.current) {
-      const scrollAmount = 300;
+      const scrollAmount = 300; // Number of pixels to scroll on each click
       scrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        left: direction === 'left' ? -scrollAmount : scrollAmount, //// If direction is left, scroll negatively; else scroll positively
         behavior: 'smooth'
       });
     }
   };
 
+  // JSX returned by the component
   return (
     <section className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-gray-900">
@@ -83,3 +85,13 @@ const Categories = () => {
 };
 
 export default Categories;
+
+
+
+
+
+
+
+
+ 
+ 
