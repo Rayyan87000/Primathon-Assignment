@@ -1,16 +1,124 @@
-# React + Vite
+Yes ✅
+Copy this and paste into a file named:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+README.md
+```
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 📌 README Content
 
-## React Compiler
+```markdown
+# Primathon Assignment – Week 1
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is created as part of my Primathon learning assignment.
 
-## Expanding the ESLint configuration
+## 🚀 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a frontend project built using:
+
+- React
+- Vite
+- Tailwind CSS
+
+The project structure follows a weekly tracking format:
+```
+
+Primathon-Assignment
+└── week-1
+
+```
+
+---
+
+## 📂 Folder Structure
+```
+
+week-1
+├── src
+├── public
+├── package.json
+├── package-lock.json
+└── vite.config.js
+
+````
+
+---
+
+## 🛠 Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Rayyan87000/Primathon-Assignment.git
+````
+
+### 2️⃣ Go Inside Week-1 Folder
+
+```bash
+cd Primathon-Assignment/week-1
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Start Development Server
+
+```bash
+npm run dev
+```
+
+The app will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📚 Learning Goals
+
+* Understanding project structure
+* Component-based architecture
+* Tailwind styling
+* Git & GitHub workflow
+
+---
+
+## 👨‍💻 Author
+
+Rayyan Kaif Ansari
+GitHub: [https://github.com/Rayyan87000](https://github.com/Rayyan87000)
+
+```
+
+---
+
+After creating file, run:
+
+```
+
+git add README.md
+git commit -m "added README"
+git push
+
+```
+
+---
+
+If you want a more professional corporate-style README, tell me 😎
+```
