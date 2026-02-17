@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef } from "react";// use for referencing DOM elements useRef is used to Access DOM elements directly
 import { FiChevronLeft, FiChevronRight, FiArrowRight } from "react-icons/fi";
 import hairFall from "../assets/concerns/HAIR_FALL_FIGHTERS.png";
 import damageRepair from "../assets/concerns/DAMAGE_REPAIR_3e9768d3-4c75-474e-8923-718f89ea6d07.png";
@@ -7,11 +7,11 @@ import frizzFixers from "../assets/concerns/FRIZZ_FIXERS.png";
 import smoothHair from "../assets/concerns/SMOOTH_HAIR_ESSENTIALS.png";
 
 const concerns = [
-  { title: "Hair fall fighters", img: hairFall },
-  { title: "Frizz fixers", img: frizzFixers },
-  { title: "Damage repair", img: damageRepair },
-  { title: "Smooth hair essentials", img: smoothHair },
-  { title: "Dandruff defence", img: dandruffDefence },
+  {  img: hairFall },
+  {  img: frizzFixers },
+  {   img: damageRepair },
+  { img: smoothHair },
+  {   img: dandruffDefence },
 ];
 
 const Concerns = () => {
@@ -54,9 +54,8 @@ const Concerns = () => {
         >    {/* Looping through concerns array to render each concern card */}
           {concerns.map((item, index) => (
             <div
-             // Key required by React for list rendering
-              key={index}className="flex-shrink-0 w-[70%] sm:w-[45%] md:w-[30%] lg:w-[20%] cursor-pointer group"
-
+            // Key required by React for list rendering
+            key={index}className="flex-shrink-0 w-[70%] sm:w-[45%] md:w-[30%] lg:w-[20%] cursor-pointer group"
             >
               <div className="relative bg-gray-800 rounded-lg overflow-hidden aspect-square">
                 <img

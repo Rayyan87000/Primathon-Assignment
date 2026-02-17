@@ -66,9 +66,3 @@ export default App;
 //   products={hairFallProducts}
 //   viewAllCount={14}
 // />
-
-
-
-
-
-

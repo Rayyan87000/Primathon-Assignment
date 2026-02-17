@@ -1,3 +1,4 @@
+//  Hair Care BFFs
 import { useState } from "react";
 import ProductCard from "./ProductCard";
 import p1 from "../assets/products/2_19.jpg";
@@ -5,7 +6,7 @@ import p2 from "../assets/products/3_6_1_2.jpg";
 import p3 from "../assets/products/3_6_23.jpg";
 import p4 from "../assets/products/black_shampoo_hair_colour_pack_of_2_619a5205-a56c-4e0e-8d7f-44e064e4f0a9.jpg";
 import p5 from "../assets/products/natural_black_5_min_ca662774-98d3-47af-95e1-ac9bfc6dfcce.jpg";
-
+//Products Array
 const products = [
   { 
     id: 1, 
@@ -74,7 +75,9 @@ const Products = () => {
           Hair Care BFFs
         </h2>
 
-        {/* Filters */}
+        {/* Filters  filters is an array: filters.map((filter) => (...)
+Means: Take each filter from the array Create a button for it
+Return that button*/} 
         <div className="flex flex-wrap justify-center gap-3 mb-8 md:mb-12">
           {filters.map((filter) => (
             <button
@@ -90,7 +93,7 @@ const Products = () => {
             </button>
           ))}
         </div>
-
+{/* “Filters ko array se dynamically generate kiya hai using map function. Active filter ko state me store kiya hai. Button click hone par state update hoti hai aur conditional styling ke through selected button highlight hota hai.” */}
         {/* Products Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {products.map(product => (

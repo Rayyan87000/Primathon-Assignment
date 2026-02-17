@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
         {/* Desktop Menu */}
-        <ul className="hidden mr-auto lg:flex items-center gap-6 py-3 md:gap-8 text-sm font-medium text-black ml-10 text:bold">{/*hidden → hidden on small screens lg:flex → visible only on large screens mr-auto → pushes menu left*/}
+        <ul className="hidden mr-auto lg:flex items-center gap-6 py-3 md:gap-8 text-sm font-medium text-black ml-10 text:bold">{/*hidden → hidden on small screens lg:flex → visible only on large screens mr-auto → pushes menu to the right of logo, creating space between logo and menu items.*/}
           <li className="cursor-pointer hover:text-gray-600 transition-colors flex items-center gap-1">
             Product
             <FiChevronDown className="w-4 h-4" />

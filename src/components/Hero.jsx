@@ -32,6 +32,8 @@ const Hero = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         className="h-[380px] md:h-[520px] lg:h-[400px] overflow-visible"
       >
+{/* overflow 👉 What happens when content goes outside its container.Example:If a box is 300px wide,
+but inside content is 500px wide.What should happen? That is controlled by overflow. */}
 
         {/* VIDEO SLIDE */}
         <SwiperSlide className="!w-[90%] ">
