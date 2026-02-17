@@ -1,11 +1,4 @@
-Yes ✅
-Copy this and paste into a file named:
-
-```
-README.md
-```
-
----
+ 
 
 # 📌 README Content
 
